@@ -53,7 +53,7 @@ import Auth from '../../utils/auth';
         <h4 className="text-center">
           There is not a user logged in:
           {/* TODO: add a button here that directs user to landing page */}
-
+          <Button className="m-2 code" variant="dark" href="/mernjournal">return to landing page</Button>
         </h4>
       </>
     );
