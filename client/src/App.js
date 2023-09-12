@@ -43,27 +43,21 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <Inner />
+        <Routes>
+          <Route path='/' element={<Johnmcavaddy />} />
+          <Route path='/mernjournal' element={<LandingPage />} />
+          <Route path='/mernjournal/homepage' element={<Profile />} />
+          <Route 
+                path="mernjournal/entry/:entryId"
+                element={<SingleEntry />}
+              />
+          <Route path='mernjournal/newentry' element={<NewEntry />} />
+          <Route path='*' element={<Johnmcavaddy />} />
+        </Routes>
         <Footer />
       </Router>
     </ApolloProvider>
   );
-}
-
-function Inner() {
-  return(
-    <Routes>
-      <Route path='/' element={<Johnmcavaddy />} />
-      <Route path='/mernjournal' element={<LandingPage />} />
-      <Route path='/mernjournal/homepage' element={<Profile />} />
-      <Route 
-            path="mernjournal/entry/:entryId"
-            element={<SingleEntry />}
-          />
-      <Route path='mernjournal/newentry' element={<NewEntry />} />
-      <Route path='*' element={<Johnmcavaddy />} />
-    </Routes>
-  )
 }
 
 export default App;

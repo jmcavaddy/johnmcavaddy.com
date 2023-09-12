@@ -5,7 +5,7 @@ import linkedInIcon from '../../../assets/linkedin-icon.svg';
 export default function Contact() {
   return (
     <div>
-      <div className="row d-flex justify-content-center">
+      <div className="row d-flex justify-content-center text-center">
         <div>
           <div className="card">
             <div className="card-body">
