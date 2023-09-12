@@ -1,0 +1,3 @@
+.no-grow {
+    align-self: center; /* Prevent the image from shrinking */
+}

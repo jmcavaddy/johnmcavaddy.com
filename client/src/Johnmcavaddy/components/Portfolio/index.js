@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-
 export default function Portfolio() {
 
     const navigate = useNavigate();
@@ -9,8 +8,8 @@ export default function Portfolio() {
   return (
     <div>
         {/* A grid that holds project cards, starting with MERNJournal and a button that redirects the user to johnmcavaddy.com/mernjournal */}
-        <div className="row">
-            <div className="col-sm-6">
+        <div className="row d-flex justify-content-center">
+            <div>
                 <div className="card">
                     <div className="card-body">
                         <h5 className="card-title">MERNJournal</h5>
