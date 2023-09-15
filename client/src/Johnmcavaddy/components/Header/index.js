@@ -10,7 +10,7 @@ const Header = ({ currentPage, handlePageChange }) => {
           <h1 style={{ fontSize: '2.5rem' }}>
             John McAvaddy
           </h1>
-          <h3><a href={resume} download>Download my resume here!</a></h3>
+          <h3><a href={resume} download>Download my resume!</a></h3>
         </div>
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       </header>

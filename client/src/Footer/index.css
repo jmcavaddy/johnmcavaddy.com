@@ -4,5 +4,6 @@
     bottom:0;
     right:0;
     height:50px;
-    border-top: 2px solid black;  
+    border-top: 2px solid black;
+    background: white;  
 }
