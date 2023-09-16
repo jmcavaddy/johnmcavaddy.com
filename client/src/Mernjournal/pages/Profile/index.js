@@ -76,7 +76,6 @@ import Auth from '../../utils/auth';
       <Container fluid>
         <Row>
             {userData.entries.map((entry) => {
-              console.log(entry.entryAuthor)
               return (
                 <Col key={entry._id} xs={12} md={4} lg={3} xl={2} className="d-flex justify-content-center align-items-center">
                   <Card className="card mx-2" style={{ width: "18rem", backgroundColor: "lavender", padding: "0.5rem", margin: "0.5rem" }}>

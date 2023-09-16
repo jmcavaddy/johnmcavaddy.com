@@ -29,17 +29,12 @@ const SignupForm = () => {
       //event.preventDefault();
       event.stopPropagation();
     }
-    console.log("user data", userFormData);
     setValidated(true);
-    console.log("user data", userFormData);
 
     try {
       const { data } = await addProfile({
         variables: { ...userFormData },
         });
-
-        console.log(data);
-
 
       Auth.login(data.addProfile.token);
 

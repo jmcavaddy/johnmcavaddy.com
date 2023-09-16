@@ -57,7 +57,6 @@ const Main = () => {
           <Row>
             {userData.entries.map((entry => {
               return (
-                <Button onClick={() => {console.log("Button clicked")}}>
                   <Col md="4">
                     <Card key={entry._id} border='dark'>
                       <Card.Body>
@@ -66,7 +65,6 @@ const Main = () => {
                       </Card.Body>
                     </Card>
                   </Col>
-                </Button>
               );
             }))}
           </Row>
