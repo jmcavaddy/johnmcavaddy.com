@@ -1,6 +1,9 @@
 {
-  "name": "mernjournal",
-  "proxy": "http://localhost:3001",
+  "name": "client",
+  "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "http://localhost:5000"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
