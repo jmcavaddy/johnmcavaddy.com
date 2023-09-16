@@ -1,5 +1,5 @@
 {
-    "name": "MERNJournal",
+    "name": "mernjournal",
     "version": "1.0.0",
     "description": "",
     "main": "server.js",
@@ -14,13 +14,14 @@
         "@apollo/client": "^3.7.15",
         "apollo-server-express": "^3.6.2",
         "bcrypt": "^5.0.0",
+        "dotenv": "^16.3.1",
         "express": "^4.17.2",
         "graphql": "^16.6.0",
         "jsonwebtoken": "^8.5.1",
+        "moment": "^2.29.4",
         "mongoose": "^6.1.8",
         "path": "^0.12.7",
-        "react-router-dom": "^6.11.2",
-        "moment": "^2.29.4"
+        "react-router-dom": "^6.11.2"
     },
     "devDependencies": {
         "nodemon": "^2.0.22"
