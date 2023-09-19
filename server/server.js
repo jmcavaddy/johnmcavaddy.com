@@ -3,6 +3,7 @@ const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const { authMiddleware } = require('./utils/auth');
 require('dotenv').config();
+import cors from 'cors';
 
 // Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas');
@@ -20,6 +21,7 @@ const server = new ApolloServer({
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
+app.use(cors({ origin: ['https://www.johnmcavaddy.com', 'https://studio.apollographql.com'] }))
 app.use(express.json());
 
 //giving access to everything in build folder, consolidated on client side
