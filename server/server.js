@@ -21,7 +21,7 @@ const server = new ApolloServer({
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: ['https://www.johnmcavaddy.com', 'https://studio.apollographql.com'] }))
+app.use(cors({ origin: ['https://johnmcavaddy.com', 'https://studio.apollographql.com'] }))
 app.use(express.json());
 
 //giving access to everything in build folder, consolidated on client side
