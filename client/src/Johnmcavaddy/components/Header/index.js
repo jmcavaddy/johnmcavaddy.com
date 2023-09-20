@@ -1,6 +1,6 @@
 import React from "react";
 import NavTabs from "../NavTabs";
-import resume from '../../../assets/John_McAvaddy_Resume.docx'
+import resume from '../../../assets/John_McAvaddy_Resume.pdf'
 
 const Header = ({ currentPage, handlePageChange }) => {
   return (
