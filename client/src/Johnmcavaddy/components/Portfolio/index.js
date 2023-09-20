@@ -13,7 +13,7 @@ export default function Portfolio() {
                 <div className="card-body">
                     <h5 className="card-title">MERNJournal</h5>
                     <p className="card-text">An application created on the MERN stack that allows users to create an account, login, and create journal entries.</p>
-                    <a className="btn btn-primary" onClick={()=>{navigate(`/mernjournal`)}}>View Project</a>
+                    <a className="btn btn-primary" onClick={()=>{navigate(`https://afternoon-taiga-70336.herokuapp.com/`)}}>View Project</a>
                 </div>
             </div>
             <div className="card">

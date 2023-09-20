@@ -34,10 +34,19 @@ const Main = () => {
 
   if (!userData?.username) {
     return (
-      <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
-      </h4>
+      <>
+        <Navbar bg="dark" data-bs-theme="dark" className='p-3'>
+          <Navbar.Brand href="#home" className='code'>MERNJournal</Navbar.Brand>
+          <Navbar.Text className="ms-auto code">
+            an e-journal
+          </Navbar.Text>
+        </Navbar>
+        <h4 className="text-center">
+          There is not a user logged in:
+          {/* TODO: add a button here that directs user to landing page */}
+          <Button className="m-2 code" variant="dark" href="/mernjournal">return to landing page</Button>
+        </h4>
+      </>
     );
   }
  
